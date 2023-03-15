@@ -1,3 +1,5 @@
+## 注：如果是之前 clone 或 Fork 的朋友 vercel 显示 404 可能需要更新下代码
+
 <p align="center">
   <img width="150" src="https://raw.githubusercontent.com/shaonianche/gallery/master/running_page/running_page_logo.png" />
 </p>
@@ -18,6 +20,10 @@
 English | [简体中文](https://github.com/yihong0618/running_page/blob/master/README-CN.md) | [Wiki](https://mfydev.github.io/Running-Page-Wiki/)
 
 ## [Runner's Page Show](https://github.com/yihong0618/running_page/issues/12)
+
+<details>
+<summary>Running page runners</summary>
+
 
 | Runner                                          | page                                         | App       |
 | ----------------------------------------------- | ---------------------------------------------|-----------|
@@ -44,7 +50,6 @@ English | [简体中文](https://github.com/yihong0618/running_page/blob/master/
 | [L1cardo](https://github.com/L1cardo)           | <https://run.licardo.cn>                     | Nike      |
 | [luckylele666](https://github.com/luckylele666) | <https://0000928.xyz>                        | Strava    |
 | [MFYDev](https://github.com/MFYDev)             | <https://mfydev.run>                         | Garmin-cn |
-| [tianheg](https://github.com/tianheg)           | <https://run.tianheg.xyz/>                   | Keep      |
 | [Eished](https://github.com/eished)             | <https://run.iknow.fun>                      | Keep      |
 | [Liuxin](https://github.com/liuxindtc)          | <https://liuxin.run>                         | Nike      |
 | [loucx](https://github.com/loucx)               | <https://loucx.github.io/running>            | Nike      |
@@ -56,6 +61,13 @@ English | [简体中文](https://github.com/yihong0618/running_page/blob/master/
 | [liugezhou](https://github.com/liugezhou)       | <https://run.liugezhou.online>               | Strava    |
 | [Jason Tan](https://github.com/Jason-cqtan)     | <https://jason-cqtan.github.io/running_page> | Nike      |
 | [Conge](https://github.com/conge)               | <https://conge.github.io/running_page>       | Strava    |
+| [zHElEARN](https://github.com/zHElEARN)         | <https://workouts.zhelearn.com>              | Strava    |
+| [Ym9i](https://github.com/Ym9i)                 | <https://bobrun.vercel.app/>                 | Strava    |
+| [jianchengwang](https://github.com/jianchengwang)   | <https://jianchengwang.github.io/running_page>     | Suunto |
+| [fxbin](https://github.com/fxbin)   | <https://fxbin.github.io/sport-records/>     | Keep |
+| [shensl4499](https://github.com/shensl4499) | <https://waner.run> | codoon |
+
+</details>
 
 ## How it works
 
@@ -83,7 +95,9 @@ English | [简体中文](https://github.com/yihong0618/running_page/blob/master/
 - **[TCX](#TCX)**
 - **[Nike_to_Strava(Using NRC Run, Strava backup data)](#Nike_to_Strava)**
 - **[Tcx_to_Strava(upload all tcx data to strava)](#TCX_to_Strava)**
-- **[Garmin+Strava(Using Garmin Run, Strava backup data)](#garminstrava)**
+- **[Gpx_to_Strava(upload all gpx data to strava)](#Gpx_to_Strava)**
+- **[Garmin_to_Strava(Using Garmin Run, Strava backup data)](#Garmin_to_Strava)**
+- **[Strava_to_Garmin(Using Strava Run, Garmin backup data)](#Strava_to_Garmin)**
 
 ## Download
 
@@ -371,7 +385,8 @@ References：
 <br>
 
 1. follow the strava steps
-2. Execute in the root directory:
+2. copy all your tcx files to TCX_OUT
+3. Execute in the root directory:
 
 ```python
 python3(python) scripts/tcx_to_strava_sync.py ${client_id} ${client_secret}  ${strava_refresch_token}
@@ -381,9 +396,42 @@ example：
 
 ```python
 python3(python) scripts/tcx_to_strava_sync.py xxx xxx xxx
+or
+python3(python) scripts/tcx_to_strava_sync.py xxx xxx xxx --all
 ```
 
+4. if you want to all files add args `--all`
+
 </details>
+
+### GPX_to_Strava
+
+<details>
+<summary>upload all gpx files to strava</summary>
+
+<br>
+
+1. follow the strava steps
+2. copy all your gpx files to GPX_OUT
+3. Execute in the root directory:
+
+```python
+python3(python) scripts/gpx_to_strava_sync.py ${client_id} ${client_secret}  ${strava_refresch_token}
+```
+
+example：
+
+```python
+python3(python) scripts/gpx_to_strava_sync.py xxx xxx xxx
+or
+python3(python) scripts/tcx_to_strava_sync.py xxx xxx xxx --all
+```
+
+4. if you want to all files add args `--all`
+
+</details>
+
+
 
 ### Nike_to_Strava
 
@@ -407,7 +455,7 @@ python3(python) scripts/nike_to_strava_sync.py eyJhbGciThiMTItNGIw******  xxx xx
 
 </details>
 
-### Garmin+Strava
+### Garmin_to_Strava
 
 <details>
 <summary>Get your <code>Garmin</code> data and upload to strava</summary>
@@ -425,6 +473,29 @@ e.g.
 ```python
 python3(python) scripts/garmin_to_strava_sync.py  xxx xxx xxx xx xxx
 ```
+</details>
+
+### Strava_to_Garmin
+
+<details>
+<summary>Get your <code>Strava</code> data and upload to Garmin</summary>
+
+<br>
+
+1. finish garmin and strava setps, at the same time, you need to add additional strava config in Github Actions secret: `secrets.STRAVA_EMAIL`、`secrets.STRAVA_PASSWORD`
+2. Execute in the root directory:
+
+```python
+python3(python) scripts/strava_to_garmin_sync.py ${{ secrets.STRAVA_CLIENT_ID }} ${{ secrets.STRAVA_CLIENT_SECRET }} ${{ secrets.STRAVA_CLIENT_REFRESH_TOKEN }}  ${{ secrets.GARMIN_EMAIL }} ${{ secrets.GARMIN_PASSWORD }} ${{ secrets.STRAVA_EMAIL }} ${{ secrets.STRAVA_PASSWORD }}
+```
+
+if your garmin account region is **China**, you need to execute the command:
+
+```python
+python3(python) scripts/strava_to_garmin_sync.py ${{ secrets.STRAVA_CLIENT_ID }} ${{ secrets.STRAVA_CLIENT_SECRET }} ${{ secrets.STRAVA_CLIENT_REFRESH_TOKEN }}  ${{ secrets.GARMIN_CN_EMAIL }} ${{ secrets.GARMIN_CN_PASSWORD }} ${{ secrets.STRAVA_EMAIL }} ${{ secrets.STRAVA_PASSWORD }} --is-cn
+```
+ps: **when initializing for the first time, if you have a large amount of strava data, some data may fail to upload, just retry several times.**
+</details>
 
 
 ### Total Data Analysis
@@ -536,6 +607,8 @@ The following steps need to be taken
 
 ![image](https://user-images.githubusercontent.com/15976103/94451037-8922e680-01e0-11eb-9bb9-729f0eadcdb7.png)
 
+4. Go to repository's `Settings -> Code and automation -> Actions ->General`, Scroll to the bottom, find `Workflow permissions`, choose the first option `Read and write permissions`, click `Save`.
+
 </details>
 
 # TODO
@@ -576,3 +649,13 @@ Before submitting PR:
 # Support
 
 Just enjoy it~
+
+ # FAQ
+### Strava Api limit
+https://www.strava.com/settings/api
+https://developers.strava.com/docs/#rate-limiting
+
+```
+Strava API Rate Limit Exceeded. Retry after 100 seconds
+Strava API Rate Limit Timeout. Retry in 799.491622 seconds
+```
