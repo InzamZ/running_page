@@ -1,0 +1,529 @@
+{
+    "id": "c8dd6cb3-2d39-400c-accf-c97db75cba1d",
+    "type": "run",
+    "app_id": "com.nike.sport.running.ios",
+    "start_epoch_ms": 1684749302925,
+    "end_epoch_ms": 1684749333002,
+    "last_modified": 1684749335605,
+    "active_duration_ms": 15522,
+    "session": false,
+    "delete_indicator": false,
+    "summaries": [
+        {
+            "metric": "distance",
+            "summary": "total",
+            "source": "com.nike.running.ios.coremotion",
+            "app_id": "com.nike.sport.running.watchos",
+            "value": 0.03541760380798951
+        },
+        {
+            "metric": "steps",
+            "summary": "total",
+            "source": "com.nike.running.ios.coremotion",
+            "app_id": "com.nike.sport.running.watchos",
+            "value": 39
+        },
+        {
+            "metric": "heart_rate",
+            "summary": "mean",
+            "source": "com.nike.running.ios.healthkit",
+            "app_id": "com.nike.sport.running.watchos",
+            "value": 148.8
+        },
+        {
+            "metric": "nikefuel",
+            "summary": "total",
+            "source": "com.nike.nikefuelengine.1.0-A5.0",
+            "app_id": "com.nike.sport.running.ios",
+            "value": 13.778585966452031
+        },
+        {
+            "metric": "speed",
+            "summary": "mean",
+            "source": "com.nike.running.ios.coremotion",
+            "app_id": "com.nike.sport.running.watchos",
+            "value": 8.214365011516701
+        },
+        {
+            "metric": "ascent",
+            "summary": "total",
+            "source": "com.nike.running.ios.coremotion",
+            "app_id": "com.nike.sport.running.watchos",
+            "value": 0.09999847412109375
+        },
+        {
+            "metric": "pace",
+            "summary": "mean",
+            "source": "com.nike.running.ios.coremotion",
+            "app_id": "com.nike.sport.running.watchos",
+            "value": 7.304277313691177
+        },
+        {
+            "metric": "descent",
+            "summary": "total",
+            "source": "com.nike.descentcalculator.v1",
+            "app_id": "com.nike.sport.running.ios",
+            "value": 2.7477638920148024
+        },
+        {
+            "metric": "nikefuel",
+            "summary": "mean",
+            "source": "com.nike.nikefuelengine.1.0-A5.0",
+            "app_id": "com.nike.sport.running.ios",
+            "value": 53.260865738121495
+        },
+        {
+            "metric": "calories",
+            "summary": "total",
+            "source": "com.nike.running.ios.healthkit",
+            "app_id": "com.nike.sport.running.watchos",
+            "value": 3.038
+        }
+    ],
+    "sources": [
+        "com.nike.pacecalculator.v1",
+        "com.nike.activityCapability",
+        "com.nike.running.ios.corelocation",
+        "com.nike.running.ios.coremotion",
+        "com.nike.nikefuelengine.1.0-A5.0",
+        "com.nike.running.ios.healthkit",
+        "com.nike.descentcalculator.v1"
+    ],
+    "tags": {
+        "com_nike_running_goaltype": "freeRun",
+        "com_nike_running_originalactivityid": "19862D1E-8694-4C48-BB4A-D3BC243FD568",
+        "com_nike_running_recordingappversion": "7.24.0",
+        "com_nike_running_recordingsource": "watch",
+        "com_nike_running_syncappversion": "7.24.0",
+        "com_nike_running_syncsource": "watch",
+        "location": "outdoors"
+    },
+    "change_tokens": [
+        "ab9cb821d579244ad0bb5cc21d0b88a407e2a6a5ad26b51e96b60bd9ee5c2ad5:1684749335605"
+    ],
+    "metric_types": [
+        "elevation",
+        "distance",
+        "latitude",
+        "pace",
+        "heart_rate",
+        "calories",
+        "steps",
+        "speed",
+        "nikefuel",
+        "descent",
+        "ascent",
+        "longitude"
+    ],
+    "metrics": [
+        {
+            "type": "distance",
+            "unit": "KM",
+            "source": "com.nike.running.ios.coremotion",
+            "appId": "com.nike.sport.running.watchos",
+            "values": [
+                {
+                    "start_epoch_ms": 1684749302925,
+                    "end_epoch_ms": 1684749304748,
+                    "value": 0.013380099467001855
+                },
+                {
+                    "start_epoch_ms": 1684749304749,
+                    "end_epoch_ms": 1684749307295,
+                    "value": 0.0061408495800569654
+                },
+                {
+                    "start_epoch_ms": 1684749307296,
+                    "end_epoch_ms": 1684749309842,
+                    "value": 0.006411465972661972
+                },
+                {
+                    "start_epoch_ms": 1684749309843,
+                    "end_epoch_ms": 1684749327669,
+                    "value": 0.009485188788268714
+                }
+            ]
+        },
+        {
+            "type": "steps",
+            "unit": "STEP",
+            "source": "com.nike.running.ios.coremotion",
+            "appId": "com.nike.sport.running.watchos",
+            "values": [
+                {
+                    "start_epoch_ms": 1684749302925,
+                    "end_epoch_ms": 1684749304748,
+                    "value": 10
+                },
+                {
+                    "start_epoch_ms": 1684749304749,
+                    "end_epoch_ms": 1684749307295,
+                    "value": 7
+                },
+                {
+                    "start_epoch_ms": 1684749307296,
+                    "end_epoch_ms": 1684749309842,
+                    "value": 8
+                },
+                {
+                    "start_epoch_ms": 1684749309843,
+                    "end_epoch_ms": 1684749327669,
+                    "value": 14
+                }
+            ]
+        },
+        {
+            "type": "speed",
+            "unit": "KMH",
+            "source": "com.nike.running.ios.coremotion",
+            "appId": "com.nike.sport.running.watchos",
+            "values": [
+                {
+                    "start_epoch_ms": 1684749304748,
+                    "end_epoch_ms": 1684749304748,
+                    "value": 10.296447176081706
+                },
+                {
+                    "start_epoch_ms": 1684749307295,
+                    "end_epoch_ms": 1684749307295,
+                    "value": 10.066299247916376
+                },
+                {
+                    "start_epoch_ms": 1684749309842,
+                    "end_epoch_ms": 1684749309842,
+                    "value": 9.457242861027611
+                },
+                {
+                    "start_epoch_ms": 1684749327669,
+                    "end_epoch_ms": 1684749327669,
+                    "value": 7.508824077446336
+                }
+            ]
+        },
+        {
+            "type": "calories",
+            "unit": "KCAL",
+            "source": "com.nike.running.ios.healthkit",
+            "appId": "com.nike.sport.running.watchos",
+            "values": [
+                {
+                    "start_epoch_ms": 1684749304748,
+                    "end_epoch_ms": 1684749307295,
+                    "value": 0.365
+                },
+                {
+                    "start_epoch_ms": 1684749307296,
+                    "end_epoch_ms": 1684749309842,
+                    "value": 0.356
+                },
+                {
+                    "start_epoch_ms": 1684749309843,
+                    "end_epoch_ms": 1684749312388,
+                    "value": 0.332
+                },
+                {
+                    "start_epoch_ms": 1684749312389,
+                    "end_epoch_ms": 1684749314935,
+                    "value": 0.314
+                },
+                {
+                    "start_epoch_ms": 1684749314935,
+                    "end_epoch_ms": 1684749317482,
+                    "value": 0.299
+                },
+                {
+                    "start_epoch_ms": 1684749317483,
+                    "end_epoch_ms": 1684749320029,
+                    "value": 0.293
+                },
+                {
+                    "start_epoch_ms": 1684749320030,
+                    "end_epoch_ms": 1684749322575,
+                    "value": 0.289
+                },
+                {
+                    "start_epoch_ms": 1684749322576,
+                    "end_epoch_ms": 1684749325122,
+                    "value": 0.273
+                },
+                {
+                    "start_epoch_ms": 1684749325123,
+                    "end_epoch_ms": 1684749327669,
+                    "value": 0.262
+                },
+                {
+                    "start_epoch_ms": 1684749327670,
+                    "end_epoch_ms": 1684749330216,
+                    "value": 0.255
+                }
+            ]
+        },
+        {
+            "type": "heart_rate",
+            "unit": "BPM",
+            "source": "com.nike.running.ios.healthkit",
+            "appId": "com.nike.sport.running.watchos",
+            "values": [
+                {
+                    "start_epoch_ms": 1684749305240,
+                    "end_epoch_ms": 1684749305240,
+                    "value": 164
+                },
+                {
+                    "start_epoch_ms": 1684749314240,
+                    "end_epoch_ms": 1684749314240,
+                    "value": 151
+                },
+                {
+                    "start_epoch_ms": 1684749322240,
+                    "end_epoch_ms": 1684749322240,
+                    "value": 149
+                },
+                {
+                    "start_epoch_ms": 1684749327240,
+                    "end_epoch_ms": 1684749327240,
+                    "value": 142
+                },
+                {
+                    "start_epoch_ms": 1684749331240,
+                    "end_epoch_ms": 1684749331240,
+                    "value": 138
+                }
+            ]
+        },
+        {
+            "type": "elevation",
+            "unit": "M",
+            "source": "com.nike.running.ios.corelocation",
+            "appId": "com.nike.sport.running.watchos",
+            "values": [
+                {
+                    "start_epoch_ms": 1684749303000,
+                    "end_epoch_ms": 1684749303000,
+                    "value": 499.79723130725324
+                },
+                {
+                    "start_epoch_ms": 1684749308001,
+                    "end_epoch_ms": 1684749308001,
+                    "value": 496.7222368856892
+                },
+                {
+                    "start_epoch_ms": 1684749313001,
+                    "end_epoch_ms": 1684749313001,
+                    "value": 494.6289340527728
+                },
+                {
+                    "start_epoch_ms": 1684749318001,
+                    "end_epoch_ms": 1684749318001,
+                    "value": 494.9747451590374
+                },
+                {
+                    "start_epoch_ms": 1684749324001,
+                    "end_epoch_ms": 1684749324001,
+                    "value": 495.63489099405706
+                },
+                {
+                    "start_epoch_ms": 1684749330001,
+                    "end_epoch_ms": 1684749330001,
+                    "value": 496.4679768793285
+                }
+            ]
+        },
+        {
+            "type": "ascent",
+            "unit": "M",
+            "source": "com.nike.running.ios.coremotion",
+            "appId": "com.nike.sport.running.watchos",
+            "values": [
+                {
+                    "start_epoch_ms": 1684749302925,
+                    "end_epoch_ms": 1684749322585,
+                    "value": 0.05999755859375
+                },
+                {
+                    "start_epoch_ms": 1684749322586,
+                    "end_epoch_ms": 1684749325133,
+                    "value": 0.01000213623046875
+                },
+                {
+                    "start_epoch_ms": 1684749325133,
+                    "end_epoch_ms": 1684749327683,
+                    "value": 0.01999664306640625
+                },
+                {
+                    "start_epoch_ms": 1684749327684,
+                    "end_epoch_ms": 1684749330229,
+                    "value": 0.01000213623046875
+                }
+            ]
+        },
+        {
+            "type": "latitude",
+            "unit": "DD",
+            "source": "com.nike.running.ios.corelocation",
+            "appId": "com.nike.sport.running.watchos",
+            "values": [
+                {
+                    "start_epoch_ms": 1684749303000,
+                    "end_epoch_ms": 1684749303000,
+                    "value": 30.679195273134404
+                },
+                {
+                    "start_epoch_ms": 1684749308001,
+                    "end_epoch_ms": 1684749308001,
+                    "value": 30.679305369923224
+                },
+                {
+                    "start_epoch_ms": 1684749313001,
+                    "end_epoch_ms": 1684749313001,
+                    "value": 30.67940339171964
+                },
+                {
+                    "start_epoch_ms": 1684749318001,
+                    "end_epoch_ms": 1684749318001,
+                    "value": 30.679479038203915
+                },
+                {
+                    "start_epoch_ms": 1684749324001,
+                    "end_epoch_ms": 1684749324001,
+                    "value": 30.67955034836354
+                },
+                {
+                    "start_epoch_ms": 1684749330001,
+                    "end_epoch_ms": 1684749330001,
+                    "value": 30.679600978588716
+                }
+            ]
+        },
+        {
+            "type": "longitude",
+            "unit": "DD",
+            "source": "com.nike.running.ios.corelocation",
+            "appId": "com.nike.sport.running.watchos",
+            "values": [
+                {
+                    "start_epoch_ms": 1684749303000,
+                    "end_epoch_ms": 1684749303000,
+                    "value": 104.09616417016416
+                },
+                {
+                    "start_epoch_ms": 1684749308001,
+                    "end_epoch_ms": 1684749308001,
+                    "value": 104.09615899838477
+                },
+                {
+                    "start_epoch_ms": 1684749313001,
+                    "end_epoch_ms": 1684749313001,
+                    "value": 104.096123332515
+                },
+                {
+                    "start_epoch_ms": 1684749318001,
+                    "end_epoch_ms": 1684749318001,
+                    "value": 104.09606425427391
+                },
+                {
+                    "start_epoch_ms": 1684749324001,
+                    "end_epoch_ms": 1684749324001,
+                    "value": 104.09598183361263
+                },
+                {
+                    "start_epoch_ms": 1684749330001,
+                    "end_epoch_ms": 1684749330001,
+                    "value": 104.09586245704224
+                }
+            ]
+        },
+        {
+            "type": "pace",
+            "unit": "MKM",
+            "source": "com.nike.pacecalculator.v1",
+            "appId": "com.nike.sport.running.ios",
+            "values": [
+                {
+                    "start_epoch_ms": 1684749304748,
+                    "end_epoch_ms": 1684749304748,
+                    "value": 5.827252738146217
+                },
+                {
+                    "start_epoch_ms": 1684749307295,
+                    "end_epoch_ms": 1684749307295,
+                    "value": 5.9604824496370306
+                },
+                {
+                    "start_epoch_ms": 1684749309842,
+                    "end_epoch_ms": 1684749309842,
+                    "value": 6.344343788320614
+                },
+                {
+                    "start_epoch_ms": 1684749327669,
+                    "end_epoch_ms": 1684749327669,
+                    "value": 7.99059871174999
+                }
+            ]
+        },
+        {
+            "type": "nikefuel",
+            "unit": "FUEL",
+            "source": "com.nike.nikefuelengine.1.0-A5.0",
+            "appId": "com.nike.sport.running.ios",
+            "values": [
+                {
+                    "start_epoch_ms": 1684749302925,
+                    "end_epoch_ms": 1684749312000,
+                    "value": 5.049121105404478
+                },
+                {
+                    "start_epoch_ms": 1684749312000,
+                    "end_epoch_ms": 1684749322000,
+                    "value": 3.602085632893629
+                },
+                {
+                    "start_epoch_ms": 1684749322000,
+                    "end_epoch_ms": 1684749332000,
+                    "value": 5.127379228153924
+                }
+            ]
+        },
+        {
+            "type": "descent",
+            "unit": "M",
+            "source": "com.nike.descentcalculator.v1",
+            "appId": "com.nike.sport.running.ios",
+            "values": [
+                {
+                    "start_epoch_ms": 1684749303000,
+                    "end_epoch_ms": 1684749308001,
+                    "value": 1.5374972107820213
+                },
+                {
+                    "start_epoch_ms": 1684749308001,
+                    "end_epoch_ms": 1684749313001,
+                    "value": 1.2102666812327811
+                }
+            ]
+        }
+    ],
+    "moments": [
+        {
+            "key": "halt",
+            "value": "pause",
+            "timestamp": 1684749313206,
+            "app_id": "com.nike.sport.running.watchos",
+            "source": "com.nike.activityCapability"
+        },
+        {
+            "key": "halt",
+            "value": "resume",
+            "timestamp": 1684749327064,
+            "app_id": "com.nike.sport.running.watchos",
+            "source": "com.nike.activityCapability"
+        },
+        {
+            "key": "halt",
+            "value": "pause",
+            "timestamp": 1684749332306,
+            "app_id": "com.nike.sport.running.watchos",
+            "source": "com.nike.activityCapability"
+        }
+    ]
+}
