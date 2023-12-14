@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
+  <trk>
+    <trkseg>
+      <trkpt lat="23.667111727634314" lon="116.99798686269204">
+        <ele>9.115851810202003</ele>
+        <time>2023-12-14T08:39:02.999000Z</time>
+      </trkpt>
+      <trkpt lat="23.66715264005068" lon="116.99789613187188">
+        <ele>9.517523781396449</ele>
+        <time>2023-12-14T08:40:06Z</time>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:hr>98</gpxtpx:hr>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="23.667167099050978" lon="116.9977983607413">
+        <ele>10.332320432178676</ele>
+        <time>2023-12-14T08:40:14Z</time>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:hr>107</gpxtpx:hr>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="23.667205423549234" lon="116.99769948651353">
+        <ele>10.21541463304311</ele>
+        <time>2023-12-14T08:40:25Z</time>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:hr>108</gpxtpx:hr>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="23.66724931456365" lon="116.99760395175947">
+        <ele>9.676714546978474</ele>
+        <time>2023-12-14T08:40:35Z</time>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:hr>107</gpxtpx:hr>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="23.6672955258947" lon="116.99751766229642">
+        <ele>9.381192465312779</ele>
+        <time>2023-12-14T08:40:44Z</time>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:hr>107</gpxtpx:hr>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="23.667331828528877" lon="116.99742348878783">
+        <time>2023-12-14T08:40:53Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
